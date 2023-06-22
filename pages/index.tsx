@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Memories from '@/components/Memories';
-import AnnualReport from '@/components/AnnualReport';
-import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+import dynamic from 'next/dynamic';
+const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false });
+const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
+const About = dynamic(() => import('@/components/About'), { ssr: false });
+const Memories = dynamic(() => import('@/components/Memories'), { ssr: false });
+const AnnualReport = dynamic(() => import('@/components/AnnualReport'), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
 
 export default function Home() {
   return (
