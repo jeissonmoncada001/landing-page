@@ -59,6 +59,42 @@
   margin-top: 50px;
 }
 
+@media (max-width: 1024px) {
+
+  .containerMemoriCausa,
+  .containerMemori1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .containerMemori1 {
+    position: relative;
+  }
+
+  .textMemori1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .textMemori1 h2,
+  .textMemori1 p,
+  .textMemori1 a {
+    color: white;
+  }
+
+  .descriptions {
+    font-size: 13px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-inline: 20px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 375px) {
 
   .subTitle,
@@ -69,10 +105,5 @@
   .subTitle {
     text-align: center;
     width: 100%;
-  }
-
-  .descriptions {
-    width: 90%;
-    text-align: center;
   }
 }

@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import style from './style.module.css';
 import man from '@/public/img/png/man.png';
-import manWalking from '@/public/img/png/manWalking.png';
 import woman from '@/public/img/png/woman.png';
 import woman1 from '@/public/img/png/woman1.png';
-import bee from '@/public/img/svg/bee.svg';
 import { Link } from 'react-scroll';
 
 const About = () => {
@@ -35,8 +33,14 @@ const About = () => {
             <h1>Piezas que perduran</h1>
           </div>
           <div className={style.contentImg}>
-            <Image src={woman1} alt={''} />
-            <Image src={man} alt={''} />
+            <div className={style.titleImg}>
+              <Image src={woman1} alt={''} />
+              <h4>Mujer</h4>
+            </div>
+            <div className={style.titleImg}>
+              <Image src={man} alt={''} />
+              <h4>Hombre</h4>
+            </div>
           </div>
         </div>
       </div>

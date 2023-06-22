@@ -33,4 +33,12 @@
   padding-block: 5px;
   color: #666666;
   border: solid #666666 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+  .container p {
+    width: 100%;
+    padding-inline: 10px;
+  }
 }

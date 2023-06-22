@@ -28,7 +28,7 @@
 }
 
 .drawer {
-  top: 60px;
+  top: 50px;
   flex: 1 0 auto;
   height: 100%;
   display: flex;
@@ -123,5 +123,6 @@
 @media (max-width: 500px) {
   .drawer {
     width: 80%;
+    top: 43px;
   }
 }

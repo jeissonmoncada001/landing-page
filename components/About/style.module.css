@@ -13,8 +13,8 @@
 }
 
 .piezasmemo {
-  width: 370px;
-  height: 560px;
+  width: 26vw;
+  height: auto;
 }
 
 .paragraph {
@@ -31,10 +31,10 @@
 
 .woman {
   position: absolute;
-  width: 300px;
-  height: 380px;
-  bottom: 13px;
-  right: 83px;
+  width: 21vw;
+  height: auto;
+  bottom: 3%;
+  right: 17%;
 }
 
 .secondSection {
@@ -77,8 +77,24 @@
 }
 
 .contentImg img {
-  width: 280px;
-  height: 460px;
+  width: 19vw;
+  height: auto;
+}
+
+.titleImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.titleImg h4 {
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: var(--fontSecond);
+  border-bottom: solid white;
+  line-height: 14px;
 }
 
 .containerMore {
@@ -125,8 +141,7 @@
   }
 
   .piezasmemo {
-    width: 330px;
-    height: 500px;
+    width: 28vw;
   }
 
   .paragraph {
@@ -134,15 +149,7 @@
   }
 
   .woman {
-    width: 270px;
-    height: 340px;
-    bottom: 16px;
-    right: 83px;
-  }
-
-  .contentImg img {
-    width: 250px;
-    height: 410px;
+    right: 13%;
   }
 
   .contentTitle {
@@ -183,14 +190,13 @@
   }
 
   .piezasmemo {
-    width: 600px;
-    height: 900px;
+    width: 60vw;
   }
 
   .woman {
-    bottom: 140px;
-    width: 512px;
-    height: 630px;
+    bottom: 10%;
+    width: 48vw;
+    right: 0%;
   }
 
   .secondSection {
@@ -238,14 +244,13 @@
 
 @media (max-width: 768px) {
   .piezasmemo {
-    width: 65%;
+    width: 65vw;
     height: auto;
   }
 
   .woman {
-    bottom: 140px;
-    width: 380px;
-    height: 470px;
+    width: 52vw;
+    height: auto;
     right: 0;
   }
 
@@ -274,19 +279,12 @@
   }
 
   .contentImg img {
-    width: 360px;
-    height: 620px;
+    width: 45vw;
+    height: auto;
   }
 }
 
 @media (max-width: 680px) {
-  .woman {
-    right: 0;
-    width: 280px;
-    height: 350px;
-    bottom: 80px;
-  }
-
   .paragraph {
     font-size: 16px;
   }
@@ -312,22 +310,6 @@
     width: 100%;
     gap: 0;
   }
-
-  .contentImg img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-
-@media (max-width: 500px) {
-  .woman {
-    right: 0;
-    width: 240px;
-    height: 310px;
-    bottom: 80px;
-  }
-
 }
 
 @media (max-width: 425px) {
@@ -340,14 +322,12 @@
     width: 90%;
   }
 
-  .woman {
-    right: 0;
-    width: 210px;
-    height: 260px;
-    bottom: 20px;
-  }
-
   .paragraph {
     font-size: 16px;
+  }
+
+  .contentImg img {
+    width: 50vw;
+    height: auto;
   }
 }
