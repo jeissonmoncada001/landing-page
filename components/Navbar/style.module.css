@@ -1,0 +1,160 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px 0;
+  position: fixed;
+  z-index: 9;
+}
+
+.containerBg {
+  z-index: 9;
+  background-color: rgba(255, 255, 255);
+  padding-bottom: 10px;
+}
+
+.containerNavbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnSections {
+  font-family: var(--fontPrimary);
+  border: none;
+  background-color: transparent;
+  margin-inline: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.btnSectionsB {
+  color: black;
+}
+
+.btnDrawer {
+  display: none;
+}
+
+.sections {
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.content button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.contentSearch {
+  display: flex;
+  flex-direction: row;
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid white 0.5px;
+  width: 250px;
+  padding: 20px 20px 10px;
+  outline: none;
+  color: white;
+}
+
+.search::placeholder {
+  color: #b7b7b7;
+}
+
+.searchB {
+  border-bottom: solid black 0.5px;
+  color: black;
+}
+
+.searchMobile {
+  display: none;
+}
+
+.imgLogo path {
+  fill: black;
+}
+
+.imgLogoW path {
+  fill: white;
+}
+
+.iconSearchW,
+.iconUserW,
+.iconStoreW,
+.iconCloseW,
+.iconDrawerW,
+.iconSearchB,
+.iconUserB,
+.iconStoreB,
+.iconCloseB,
+.iconDrawerB {
+  width: 20px;
+  height: 20px;
+}
+
+.iconSearchW path,
+.iconUserW path,
+.iconStoreW path,
+.iconClosew path,
+.iconDrawerW path {
+  stroke: white;
+}
+
+.iconSearchB path,
+.iconUserB path,
+.iconStoreB path,
+.iconCloseW path,
+.iconDrawerW path {
+  stroke: black;
+}
+
+@media (max-width: 1024px) {
+  .btnDrawer {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+
+  .sections {
+    display: none;
+  }
+
+  .imgLogo {
+    height: 30px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .searchMobile {
+    font-family: var(--fontPrimary);
+    display: flex;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white;
+    width: 99%;
+    padding: 20px 20px 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .imgLogo {
+    height: 20px;
+  }
+}

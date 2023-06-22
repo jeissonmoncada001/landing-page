@@ -1,0 +1,114 @@
+.contentBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 70px;
+  flex-direction: column;
+}
+
+.lfgLanding {
+  width: 380px;
+  height: 110px;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  font-family: var(--fontPrimary);
+  font-size: 14px;
+  color: #82807F;
+  width: 460px;
+  text-align: justify;
+  letter-spacing: 3.5px;
+}
+
+.secondParagraph {
+  font-family: var(--fontPrimary);
+  font-size: 14px;
+  color: #82807F;
+  width: 460px;
+  text-align: justify;
+  letter-spacing: 3.5px;
+  text-align: center;
+}
+
+.scrollNavigator {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 100px;
+  margin-top: 60px;
+}
+
+.scrollNavigator a {
+  margin-inline: 20px;
+  font-family: var(--fontPrimary);
+  font-size: 14px;
+  color: #82807F;
+  letter-spacing: 3.5px;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .contentBanner {
+    padding-inline: 30px;
+  }
+
+  .scrollNavigator {
+    gap: 80px;
+  }
+
+  .lfgLanding {
+    width: 700px;
+    height: 200px;
+  }
+
+  .paragraph {
+    width: 80%;
+    font-size: 30px;
+  }
+
+  .scrollNavigator a {
+    letter-spacing: 2.5px;
+    font-size: 20px;
+  }
+
+  .scrollNavigator {
+    gap: 60px;
+    grid-template-columns: auto auto;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .lfgLanding {
+    width: 500px;
+    height: 150px;
+  }
+
+  .paragraph {
+    font-size: 20px;
+  }
+
+  .scrollNavigator a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .lfgLanding {
+    width: 300px;
+    height: 90px;
+  }
+
+  .paragraph,
+  .secondParagraph {
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+  }
+
+  .scrollNavigator a {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}

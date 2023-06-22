@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'helveticaNeue';
+  src: url('../public/fonts/helveticaNeue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url('../public/fonts/HelveticaNeueBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueUltraLight';
+  src: url('../public/fonts/HelveticaNeueUltraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'UnboundedBold';
+  src: url('../public/fonts/UnboundedBold.ttf') format('truetype');
+}
+
+:root {
+  --fontPrimary: helveticaNeue;
+  --fontSecond: HelveticaNeueBold;
+  --fontThird: HelveticaNeueUltraLight;
+  --fontNumber: UnboundedBold;
+  --primary: #EBE5DE
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

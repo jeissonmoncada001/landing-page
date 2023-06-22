@@ -1,0 +1,160 @@
+.container {
+  background-image: url('../../public/img/png/background.png');
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 10px;
+  flex-direction: column;
+}
+
+
+.container h3 {
+  font-family: var(--fontThird);
+  font-size: 30px;
+  color: #82807F;
+}
+
+.container button {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid #82807F;
+  color: #82807F;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.textDesktop {
+  margin-bottom: 10px;
+  width: 550px;
+  text-align: center;
+}
+
+.textDesktop strong {
+  font-family: var(--fontNumber);
+  color: #666666;
+  font-size: 32px;
+}
+
+.textMobile {
+  display: none;
+}
+
+.containerDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  font-family: var(--fontPrimary);
+}
+
+.containerDrop hr {
+  border: solid #82807F 0.5px;
+  width: 80%;
+  margin-block: 50px;
+}
+
+.containerDrop h1 {
+  font-family: var(--fontSecond);
+  color: #666666;
+  margin-bottom: 50px;
+}
+
+.containerDrop p {
+  margin-bottom: 30px;
+  color: #898685;
+}
+
+.containerDrop strong {
+  font-family: var(--fontSecond);
+  color: #666666;
+  margin-block: 50px;
+}
+
+.containerDrop button {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    height: auto;
+    padding-block: 80px;
+  }
+
+  .textDesktop {
+    display: none;
+  }
+
+  .textMobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .textMobile h3 {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .textMobile strong {
+    font-family: var(--fontNumber);
+    color: #666666;
+    font-size: 80px;
+    margin-inline: 50px;
+  }
+
+
+  .container button {
+    font-size: 40px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+
+  .container {
+    height: auto;
+  }
+
+  .textMobile h3 {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .textMobile strong {
+    font-size: 70px;
+  }
+
+
+  .container button {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    height: auto;
+    padding-block: 40px;
+  }
+
+  .textMobile h3 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .textMobile strong {
+    font-size: 40px;
+  }
+
+  .container button {
+    font-size: 14px;
+  }
+}

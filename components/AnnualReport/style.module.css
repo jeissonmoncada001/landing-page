@@ -1,0 +1,36 @@
+.container {
+  background-image: url('../../public/img/png/background.png');
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 10px;
+  flex-direction: column;
+}
+
+.container h1 {
+  font-family: var(--fontSecond);
+  color: #666666;
+  font-size: 24px;
+  letter-spacing: 2.5px;
+}
+
+.container p {
+  font-family: var(--fontThird);
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  width: 700px;
+  text-align: center;
+  color: #666666;
+  margin-block: 30px;
+}
+
+.container button {
+  font-family: var(--fontPrimary);
+  background-color: transparent;
+  padding-inline: 30px;
+  padding-block: 5px;
+  color: #666666;
+  border: solid #666666 1px;
+}
